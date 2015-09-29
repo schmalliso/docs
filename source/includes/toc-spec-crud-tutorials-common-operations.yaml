@@ -1,0 +1,20 @@
+level: 1
+source:
+  file: toc-crud-tutorials-common-operations.yaml
+  ref: /tutorial/project-fields-from-query-results
+---
+level: 1
+source:
+  file: toc-crud-tutorials-common-operations.yaml
+  ref: /tutorial/limit-number-of-elements-in-updated-array
+---
+level: 1
+source:
+  file: toc-crud-tutorials-common-operations.yaml
+  ref: /tutorial/update-if-current
+---
+level: 1
+source:
+  file: toc-crud-tutorials-common-operations.yaml
+  ref: /tutorial/create-an-auto-incrementing-field
+...

@@ -1,0 +1,9 @@
+======================
+Common CRUD Operations
+======================
+
+.. default-domain:: mongodb
+
+.. include:: /includes/toc/dfn-list-spec-crud-tutorials-common-operations.rst
+
+.. include:: /includes/toc/crud-tutorials-common-operations.rst

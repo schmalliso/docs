@@ -1,0 +1,18 @@
+file: /tutorial/project-fields-from-query-results
+description: |
+  Limit which fields are returned by a query.
+---
+file: /tutorial/limit-number-of-elements-in-updated-array
+description: |
+  Use :operator:`$push` with modifiers to sort and maintain an array
+  of fixed size.
+---
+file: /tutorial/update-if-current
+description: |
+  Update a document only if it has not changed since it was last read.
+---
+file: /tutorial/create-an-auto-incrementing-field
+description: |
+  Describes how to create an incrementing sequence number for the
+  ``_id`` field using a Counters Collection or an Optimistic Loop.
+...

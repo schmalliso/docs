@@ -1,0 +1,10 @@
+level: 1
+source:
+  file: toc-crud-tutorials-cursors.yaml
+  ref: /tutorial/iterate-a-cursor
+---
+level: 1
+source:
+  file: toc-crud-tutorials-cursors.yaml
+  ref: /tutorial/create-tailable-cursor
+...

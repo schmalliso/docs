@@ -1,6 +1,6 @@
 level: 1
 source:
-  file: toc-crud-concepts.yaml
+  file: toc-crud-landing.yaml
   ref: /core/read-operations
 ---
 level: 2
@@ -20,7 +20,7 @@ source:
 ---
 level: 1
 source:
-  file: toc-crud-concepts.yaml
+  file: toc-crud-landing.yaml
   ref: /core/write-operations
 ---
 level: 2

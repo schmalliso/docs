@@ -1,0 +1,9 @@
+=======
+Cursors
+=======
+
+.. default-domain:: mongodb
+
+.. include:: /includes/toc/dfn-list-spec-crud-tutorials-cursors.rst
+
+.. include:: /includes/toc/crud-tutorials-cursors.rst

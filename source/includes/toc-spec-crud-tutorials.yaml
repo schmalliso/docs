@@ -1,0 +1,75 @@
+level: 1
+source:
+  file: toc-crud-tutorials.yaml
+  ref: /tutorial/insert-documents
+---
+level: 1
+source:
+  file: toc-crud-tutorials.yaml
+  ref: /tutorial/query-documents
+---
+level: 1
+source:
+  file: toc-crud-tutorials.yaml
+  ref: /tutorial/modify-documents
+---
+level: 1
+source:
+  file: toc-crud-tutorials.yaml
+  ref: /tutorial/remove-documents
+---
+level: 1
+source:
+  file: toc-crud-tutorials.yaml
+  ref: /applications/crud-common-operations
+---
+level: 2
+source:
+  file: toc-crud-tutorials-common-operations.yaml
+  ref: /tutorial/project-fields-from-query-results
+---
+level: 2
+source:
+  file: toc-crud-tutorials-common-operations.yaml
+  ref: /tutorial/limit-number-of-elements-in-updated-array
+---
+level: 2
+source:
+  file: toc-crud-tutorials-common-operations.yaml
+  ref: /tutorial/update-if-current
+---
+level: 2
+source:
+  file: toc-crud-tutorials-common-operations.yaml
+  ref: /tutorial/create-an-auto-incrementing-field
+---
+level: 1
+source:
+  file: toc-crud-tutorials.yaml
+  ref: /applications/crud-query-performance
+---
+level: 2
+source:
+  file: toc-crud-tutorials-performance.yaml
+  ref: /tutorial/analyze-query-plan
+---
+level: 2
+source:
+  file: toc-crud-tutorials-performance.yaml
+  ref: /tutorial/optimize-query-performance-with-indexes-and-projections
+---
+level: 1
+source:
+  file: toc-crud-tutorials.yaml
+  ref: /applications/crud-cursors
+---
+level: 2
+source:
+  file: toc-crud-tutorials-cursors.yaml
+  ref: /tutorial/iterate-a-cursor
+---
+level: 2
+source:
+  file: toc-crud-tutorials-cursors.yaml
+  ref: /tutorial/create-tailable-cursor
+...

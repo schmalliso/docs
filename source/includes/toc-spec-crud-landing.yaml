@@ -6,22 +6,32 @@ source:
 level: 1
 source:
   file: toc-crud-landing.yaml
-  ref: /core/crud
----
-level: 2
-source:
-  file: toc-crud-concepts.yaml
   ref: /core/read-operations
 ---
-level: 2
+level: 1
 source:
-  file: toc-crud-concepts.yaml
+  file: toc-crud-landing.yaml
   ref: /core/write-operations
 ---
 level: 1
 source:
   file: toc-crud-landing.yaml
   ref: /applications/crud
+---
+level: 2
+source:
+  file: toc-crud-tutorials.yaml
+  ref: /applications/crud-common-operations
+---
+level: 2
+source:
+  file: toc-crud-tutorials.yaml
+  ref: /applications/crud-query-performance
+---
+level: 2
+source:
+  file: toc-crud-tutorials.yaml
+  ref: /applications/crud-cursors
 ---
 level: 1
 source:

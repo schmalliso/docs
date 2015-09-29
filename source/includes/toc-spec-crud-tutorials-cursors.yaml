@@ -1,0 +1,10 @@
+level: 1
+source:
+  file: toc-crud-tutorials-performance.yaml
+  ref: /tutorial/analyze-query-plan
+---
+level: 1
+source:
+  file: toc-crud-tutorials-performance.yaml
+  ref: /tutorial/optimize-query-performance-with-indexes-and-projections
+...

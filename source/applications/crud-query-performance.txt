@@ -1,0 +1,9 @@
+=================
+Query Performance
+=================
+
+.. default-domain:: mongodb
+
+.. include:: /includes/toc/dfn-list-spec-crud-tutorials-performance.rst
+
+.. include:: /includes/toc/crud-tutorials-performance.rst

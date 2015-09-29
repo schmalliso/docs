@@ -1,8 +1,11 @@
 file: /core/crud-introduction
 description: "An introduction to the MongoDB data model as well as queries and data manipulations."
 ---
-file: /core/crud
-description: "The core documentation of query and data manipulation."
+file: /core/read-operations
+description: "Queries are the core operations that return data in MongoDB. Introduces queries, their behavior, and performances."
+---
+file: /core/write-operations
+description: "Write operations insert, update, or remove documents in MongoDB. Introduces data create and modify operations, their behavior, and performances."
 ---
 file: /applications/crud
 description: "Examples of basic query and data modification operations."

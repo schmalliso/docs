@@ -1,0 +1,8 @@
+file: /tutorial/analyze-query-plan
+description: |
+  Use query introspection (i.e. ``explain``) to analyze the efficiency
+  of queries and determine how a query uses available indexes.
+---
+file: /tutorial/optimize-query-performance-with-indexes-and-projections
+description: "Introduces the use of :ref:`projections <projections>` to reduce the amount of data MongoDB sends to clients."
+...
