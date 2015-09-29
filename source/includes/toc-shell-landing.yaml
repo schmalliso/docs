@@ -1,0 +1,30 @@
+file: /tutorial/getting-started-with-the-mongo-shell
+description: |
+  Introduces the use and operation of the MongoDB shell.
+---
+file: /tutorial/access-mongo-shell-help
+description: |
+  Describes the available methods for accessing online help for the
+  operation of the :program:`mongo` interactive shell.
+---
+file: /core/shell-types
+description: |
+  Describes the super-set of JSON available for use in the
+  :program:`mongo` shell.
+---
+file: /tutorial/use-database-commands
+description: |
+  The process for running database commands that provide basic
+  database operations.
+---
+file: /administration/scripting
+description: |
+  An introduction to the scripting capabilities of the
+  :program:`mongo` shell and the scripting capabilities embedded in
+  MongoDB instances.
+---
+file: /reference/mongo-shell
+description: |
+  A high level reference to the use and operation of the
+  :program:`mongo` shell.
+...

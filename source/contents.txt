@@ -9,12 +9,16 @@ project, this Manual and additional editions of this text.
    :titlesonly:
 
    Installation </installation>
+   /shell
    /crud
+   /aggregation
+   /applications/geospatial-indexes
+   Text Search </core/index-text>
+   /indexes
+   Storage </core/storage>
    /data-modeling
    /administration
    /security
-   /aggregation
-   /indexes
    /replication
    /sharding
    /faq

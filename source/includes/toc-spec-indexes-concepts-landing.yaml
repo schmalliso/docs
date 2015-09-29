@@ -21,16 +21,6 @@ source:
 level: 2
 source:
   file: toc-indexes-concepts-types.yaml
-  ref: /applications/geospatial-indexes
----
-level: 2
-source:
-  file: toc-indexes-concepts-types.yaml
-  ref: /core/index-text
----
-level: 2
-source:
-  file: toc-indexes-concepts-types.yaml
   ref: /core/index-hashed
 ---
 level: 1

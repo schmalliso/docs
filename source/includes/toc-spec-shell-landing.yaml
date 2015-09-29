@@ -1,0 +1,30 @@
+level: 1
+source:
+  file: toc-shell-landing.yaml
+  ref: /tutorial/getting-started-with-the-mongo-shell
+---
+level: 1
+source:
+  file: toc-shell-landing.yaml
+  ref: /tutorial/access-mongo-shell-help
+---
+level: 1
+source:
+  file: toc-shell-landing.yaml
+  ref: /core/shell-types
+---
+level: 1
+source:
+  file: toc-shell-landing.yaml
+  ref: /tutorial/use-database-commands
+---
+level: 1
+source:
+  file: toc-shell-landing.yaml
+  ref: /administration/scripting
+---
+level: 1
+source:
+  file: toc-shell-landing.yaml
+  ref: /reference/mongo-shell
+...
