@@ -2,11 +2,16 @@ file: /core/data-modeling-introduction
 description: |
    An introduction to data modeling in MongoDB.
 ---
-file: /core/data-models
+file: /core/data-model-design
 description: |
-   The core documentation detailing the decisions you must make
-   when determining a data model, and discussing considerations
-   that should be taken into account.
+   Presents the different strategies that you can choose from when
+   determining your data model, their strengths and their weaknesses.
+---
+file: /core/data-model-operations
+description: |
+   Details features you should keep in mind when designing your data
+   model, such as lifecycle management, indexing, horizontal
+   scalability, and document growth.
 ---
 file: /applications/data-models
 description: |

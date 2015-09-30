@@ -61,7 +61,7 @@ For more information, see :method:`db.collection.insert()`,
 :method:`db.createCollection()`, :method:`db.collection.update()`,
 :update:`$set`, :update:`$unset`,
 :method:`db.collection.createIndex()`, :doc:`indexes </core/indexes>`,
-:method:`db.collection.drop()`, and :doc:`/core/data-models`.
+:method:`db.collection.drop()`, and :doc:`/data-modeling`.
 
 Insert
 ~~~~~~
