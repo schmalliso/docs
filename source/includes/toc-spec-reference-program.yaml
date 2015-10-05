@@ -1,0 +1,90 @@
+level: 1
+source:
+  file: toc-reference-program.yaml
+  ref: /reference/program
+---
+level: 2
+file: /reference/program/mongod
+description: |
+  [words]
+---
+level: 2
+file: /reference/program/mongos
+description: |
+  [words]
+---
+level: 2
+file: /reference/program/mongo
+description: |
+  [words]
+---
+level: 2
+file: /reference/program/mongod.exe
+description: |
+  [words]
+---
+level: 2
+file: /reference/program/mongos.exe
+description: |
+  [words]
+---
+level: 1
+source:
+  file: toc-reference-program.yaml
+  ref: /reference/mongodb-tools
+---
+level: 2
+file: /reference/program/mongodump
+description: |
+  [words]
+---
+level: 2
+file: /reference/program/mongorestore
+description: |
+  [words]
+---
+level: 2
+file: /reference/program/bsondump
+description: |
+  [words]
+---
+level: 2
+file: /reference/program/mongooplog
+description: |
+  [words]
+---
+level: 2
+file: /reference/program/mongoimport
+description: |
+  [words]
+---
+level: 2
+file: /reference/program/mongoexport
+description: |
+  [words]
+---
+level: 2
+file: /reference/program/mongostat
+description: |
+  [words]
+---
+level: 2
+file: /reference/program/mongotop
+description: |
+  [words]
+---
+level: 2
+file: /reference/program/mongosniff
+description: |
+  [words]
+---
+level: 2
+file: /reference/program/mongoperf
+description: |
+  [words]
+---
+level: 2
+file: /reference/program/mongofiles
+description: |
+  [words]
+...

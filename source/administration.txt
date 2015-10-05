@@ -27,4 +27,4 @@ MongoDB.
    :doc:`/administration/sharded-clusters` for additional tutorials and
    information.
 
-.. include:: /includes/toc/administration-landing.rst
+.. include:: /includes/toc/administration-landing-new.rst

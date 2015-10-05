@@ -1,0 +1,11 @@
+file: /reference/program
+description: |
+  Documentation of the core MongoDB components: :program:`mongod`,
+  :program:`mongos`, and :program:`mongo`, as well as the Windows
+  binaries :program:`mongod.exe` and :program:`mongos.exe`.
+---
+file: /reference/mongodb-tools
+description: |
+  Documentation of the MongoDB tools, which provide import, export, and
+  diagnostic capabilities.
+...

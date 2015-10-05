@@ -1,0 +1,33 @@
+file: /administration/production-notes
+description: |
+  A collection of notes that describe best practices and
+  considerations for the operations of MongoDB instances and
+  deployments.
+---
+file: /administration/production-checklist
+description: |
+  Checklist of recommendations for deploying
+  MongoDB in production.
+---
+file: /applications/design-notes
+description: |
+  A collection of notes related to the architecture, design, and
+  administration of MongoDB-based applications.
+---
+file: /administration/performance
+description: |
+  [words]
+---
+file: /administration/configuration-and-maintenance
+description: |
+  [words]
+---
+file: /core/backups
+description: |
+  Describes approaches and considerations for backing up a MongoDB
+  database.
+---
+file: /applications/monitoring
+description: |
+  [words]
+...

@@ -1,52 +1,75 @@
 level: 1
 source:
-  file: toc-administration-landing.yaml
-  ref: /core/administration
+  file: toc-administration-landing-new.yaml
+  ref: /administration/production-notes
+---
+level: 1
+source:
+  file: toc-administration-landing-new.yaml
+  ref: /administration/production-checklist
+---
+level: 1
+source:
+  file: toc-administration-landing-new.yaml
+  ref: /applications/design-notes
+---
+level: 1
+source:
+  file: toc-administration-landing-new.yaml
+  ref: /administration/performance
 ---
 level: 2
 source:
-  file: toc-administration-core-strategy.yaml
+  file: toc-administration-optimization.yaml
+  ref: /administration/analyzing-mongodb-performance
+---
+level: 2
+source:
+  file: toc-administration-optimization.yaml
+  ref: /tutorial/performance
+---
+level: 2
+source:
+  file: toc-administration-optimization.yaml
+  ref: /reference/performance
+---
+level: 1
+source:
+  file: toc-administration-landing-new.yaml
+  ref: /administration/configuration-and-maintenance
+---
+level: 1
+source:
+  file: toc-administration-landing-new.yaml
   ref: /core/backups
 ---
 level: 2
 source:
-  file: toc-administration-core-strategy.yaml
-  ref: /administration/monitoring
+  file: toc-administration-backup-and-recovery.yaml
+  ref: /tutorial/backup-with-filesystem-snapshots
 ---
 level: 2
 source:
-  file: toc-administration-core-strategy.yaml
-  ref: /administration/production-notes
+  file: toc-administration-backup-and-recovery.yaml
+  ref: /tutorial/restore-replica-set-from-backup
 ---
-description: Continue reading from :doc:`/core/administration` for additional documentation
-  of MongoDB administration.
 level: 2
-ref: GlkCJdBPjrzrMrO
-text_only: true
+source:
+  file: toc-administration-backup-and-recovery.yaml
+  ref: /tutorial/backup-and-restore-tools
+---
+level: 2
+source:
+  file: toc-administration-backup-and-recovery.yaml
+  ref: /administration/backup-sharded-clusters
+---
+level: 2
+source:
+  file: toc-administration-backup-and-recovery.yaml
+  ref: /tutorial/recover-data-following-unexpected-shutdown
 ---
 level: 1
 source:
-  file: toc-administration-landing.yaml
-  ref: /administration/tutorials
----
-level: 2
-source:
-  file: toc-administration-tutorials-landing.yaml
-  ref: /administration/maintenance
----
-level: 2
-source:
-  file: toc-administration-tutorials-landing.yaml
-  ref: /administration/backup
----
-description: Continue reading from :doc:`/administration/tutorials` for more tutorials
-  of common MongoDB maintenance operations.
-level: 2
-ref: uqqeBiDTVgYgwGH
-text_only: true
----
-level: 1
-source:
-  file: toc-administration-landing.yaml
-  ref: /reference/administration
+  file: toc-administration-landing-new.yaml
+  ref: /applications/monitoring
 ...

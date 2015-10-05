@@ -1,3 +1,7 @@
+file: /reference/method
+description: |
+  Documentation of all JavaScript methods and helpers in the :program:`mongo` shell.
+---
 file: /reference/operator
 description: |
   Documentation of query, update, projection, and aggregation framework operators.
@@ -6,11 +10,7 @@ file: /reference/command
 description: |
   Documentation of all MongoDB :term:`database commands <database command>` operations, syntax, and use.
 ---
-file: /reference/method
-description: |
-  Documentation of all JavaScript methods and helpers in the :program:`mongo` shell.
----
-file: /reference/program
+file: /reference/program-landing
 description: |
   Documentation of :program:`mongod` and :program:`mongos` and all other tools distributed with MongoDB.
 ---
@@ -23,10 +23,6 @@ description: |
   Documentation of all :program:`mongod` and :program:`mongos`
   parameters that are available in the :dbcommand:`setParameter`
   (command) and :setting:`setParameter` run-time interface.
----
-file: /reference/limits
-description: |
-  A list of important limits and thresholds imposed by MongoDB.
 ---
 file: /reference/connection-string
 description: |
@@ -46,6 +42,10 @@ description: |
 file: /reference/log-messages
 description: |
   Describes the components of log messages.
+---
+file: /reference/limits
+description: |
+  A list of important limits and thresholds imposed by MongoDB.
 ---
 file: /reference/glossary
 description: |

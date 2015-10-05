@@ -1,0 +1,9 @@
+=============================
+Configuration and Maintenance
+=============================
+
+.. default-domain:: mongodb
+
+.. include:: /includes/toc/dfn-list-administration-config-maintenance.rst
+
+.. include:: /includes/toc/administration-config-maintenance.rst

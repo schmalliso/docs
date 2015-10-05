@@ -1,0 +1,9 @@
+==========================
+MongoDB Package Components
+==========================
+
+.. default-domain:: mongodb
+
+.. include:: /includes/toc/dfn-list-spec-reference-program.rst
+
+.. include:: /includes/toc/reference-program.rst

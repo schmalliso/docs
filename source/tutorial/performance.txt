@@ -1,0 +1,9 @@
+======================================
+Performance and Optimization Tutorials
+======================================
+
+.. default-domain:: mongodb
+
+.. include:: /includes/toc/dfn-list-administration-performance-tutorials.rst
+
+.. include:: /includes/toc/administration-performance-tutorials.rst

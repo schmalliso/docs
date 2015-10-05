@@ -1,0 +1,9 @@
+=========================
+Monitor MongoDB with SNMP
+=========================
+
+.. default-domain:: mongodb
+
+.. include:: /includes/toc/dfn-list-administration-monitoring-snmp.rst
+
+.. include:: /includes/toc/administration-monitoring-snmp.rst

@@ -1,0 +1,30 @@
+level: 1
+source:
+  file: toc-administration-landing-new.yaml
+  ref: /core/backups
+---
+level: 2
+source:
+  file: toc-administration-backup-and-recovery.yaml
+  ref: /tutorial/backup-with-filesystem-snapshots
+---
+level: 2
+source:
+  file: toc-administration-backup-and-recovery.yaml
+  ref: /tutorial/restore-replica-set-from-backup
+---
+level: 2
+source:
+  file: toc-administration-backup-and-recovery.yaml
+  ref: /tutorial/backup-and-restore-tools
+---
+level: 2
+source:
+  file: toc-administration-backup-and-recovery.yaml
+  ref: /administration/backup-sharded-clusters
+---
+level: 2
+source:
+  file: toc-administration-backup-and-recovery.yaml
+  ref: /tutorial/recover-data-following-unexpected-shutdown
+...

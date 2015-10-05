@@ -13,11 +13,6 @@ source:
   file: toc-administration-core-strategy.yaml
   ref: /administration/monitoring
 ---
-level: 2
-source:
-  file: toc-administration-core-strategy.yaml
-  ref: /administration/configuration
----
 description: Continue reading from :doc:`/administration/strategy` for additional
   documentation.
 level: 2

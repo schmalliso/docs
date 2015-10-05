@@ -1,0 +1,45 @@
+level: 1
+source:
+  file: toc-administration-optimization.yaml
+  ref: /administration/analyzing-mongodb-performance
+---
+level: 1
+source:
+  file: toc-administration-optimization.yaml
+  ref: /tutorial/performance
+---
+level: 2
+source:
+  file: toc-administration-performance-tutorials.yaml
+  ref: /tutorial/transparent-huge-pages
+---
+level: 2
+source:
+  file: toc-administration-performance-tutorials.yaml
+  ref: /tutorial/evaluate-operation-performance
+---
+level: 2
+source:
+  file: toc-administration-performance-tutorials.yaml
+  ref: /tutorial/manage-the-database-profiler
+---
+level: 1
+source:
+  file: toc-administration-optimization.yaml
+  ref: /reference/performance
+---
+level: 2
+source:
+   file: toc-administration-performance-reference.yaml
+   ref: /reference/ulimit
+---
+level: 2
+source:
+   file: toc-administration-performance-reference.yaml
+   ref: /reference/database-profiler
+---
+level: 2
+source:
+   file: toc-administration-performance-reference.yaml
+   ref: /reference/server-status
+...

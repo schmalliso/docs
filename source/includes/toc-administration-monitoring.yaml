@@ -1,0 +1,12 @@
+file: /administration/monitoring
+description: |
+  An overview of monitoring tools, diagnostic strategies, and approaches to
+  monitoring replica sets and sharded clusters.
+---
+file: /applications/snmp
+description: |
+  MongoDB Enterprise can provide database metrics via SNMP in support
+  of centralized data collection and aggregation. Describes how to
+  monitor MongoDB with SNMP on Linux and Windows, as well as
+  troubleshooting strategies.
+...

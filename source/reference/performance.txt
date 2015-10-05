@@ -1,0 +1,9 @@
+======================================
+Performance and Optimization Reference
+======================================
+
+.. default-domain:: mongodb
+
+.. include:: /includes/toc/dfn-list-administration-performance-reference.rst
+
+.. include:: /includes/toc/administration-performance-reference.rst

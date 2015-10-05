@@ -1,0 +1,16 @@
+===============
+Monitor MongoDB
+===============
+
+.. default-domain:: mongodb
+
+The following tutorials describe strategies for monitoring
+:term:`replica sets <replica set>` and :term:`sharded clusters <sharded
+cluster>`. MongoDB also offers |mms| for monitoring and managing
+MongoDB deployments.
+
+.. include:: /includes/toc/dfn-list-administration-monitoring.rst
+
+.. include:: /includes/toc/administration-monitoring.rst
+
+.. include:: /includes/replacement-mms.rst

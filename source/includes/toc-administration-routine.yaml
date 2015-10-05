@@ -1,8 +1,3 @@
-file: /tutorial/transparent-huge-pages
-description: |
-  Describes Transparent Huge Pages (THP) and provides detailed
-  instructions on disabling them.
----
 file: /tutorial/manage-mongodb-processes
 description: |
   Start, configure, and manage running :program:`mongod` process.
@@ -11,11 +6,6 @@ file: /tutorial/terminate-running-operations
 description: |
   Stop in progress MongoDB client operations using
   :method:`db.killOp()` and :method:`~cursor.maxTimeMS()`.
----
-file: /tutorial/manage-the-database-profiler
-description: |
-  Collect data that introspects the performance of query and update
-  operations on a :program:`mongod` instance.
 ---
 file: /tutorial/rotate-log-files
 description: |
@@ -31,19 +21,4 @@ file: /tutorial/upgrade-revision
 description: |
   Introduces the basic process for upgrading a MongoDB deployment
   between different minor release versions.
----
-file: /tutorial/monitor-with-snmp
-description: |
-  The SNMP extension, available in MongoDB Enterprise, allows MongoDB
-  to provide database metrics via SNMP.
----
-file: /tutorial/monitor-with-snmp-on-windows
-description: |
-  The SNMP extension, available in the Windows build of MongoDB
-  Enterprise, allows MongoDB to provide database metrics via SNMP.
----
-file: /tutorial/troubleshoot-snmp
-description: |
-  Outlines common errors and diagnostic processes useful for deploying
-  MongoDB Enterprise with SNMP support.
 ...
