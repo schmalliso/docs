@@ -1,0 +1,38 @@
+file: /core/document
+description: |
+  MongoDB stores all data in documents, which are JSON-style data
+  structures composed of field-and-value pairs.
+---
+file: /core/collection
+description: |
+  MongoDB groups documents together in collections. A collection exists
+  within a single database and typically, all documents in a collection
+  have a similar or related purpose.
+---
+file: /core/namespace
+description: |
+  MongoDB uses namespaces to identify collections. A namespace
+  is the concatenation of the database name and the collection names
+  with a period in between.
+---
+file: /core/database
+description: |
+  A physical container for collections. Each database gets its own set
+  of files on the file system. A single MongoDB server typically has
+  multiple databases.
+---
+file: /core/capped-collections
+description: |
+  Capped collections provide a special type of size-constrained
+  collections that preserve insertion order and can support high
+  volume inserts.
+---
+file: /core/gridfs
+description: |
+  GridFS is a specification for storing documents that exceeds the
+  :term:`BSON`\-document size limit of 16MB.
+---
+file: /reference/gridfs
+description: |
+  Convention for storing large files in a MongoDB Database.
+...

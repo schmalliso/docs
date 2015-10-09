@@ -1,0 +1,8 @@
+=========
+Databases
+=========
+
+.. default-domain:: mongodb
+
+This page will talk about what a "Database" is in MongoDB (i.e. a physical
+place where collections reside).

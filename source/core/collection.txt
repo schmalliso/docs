@@ -1,0 +1,7 @@
+===========
+Collections
+===========
+
+.. default-domain:: mongodb
+
+This page will talk about what a collection is.

@@ -19,4 +19,11 @@ description: |
   Selectivity is the ability of a query to narrow results using the
   index. Selectivity allows MongoDB to use the index for a larger
   portion of the work associated with fulfilling the query.
+---
+file: /tutorial/expire-data
+description: |
+  TTL indexes make it possible to automatically remove data from a
+  collection based on the value of a timestamp and are useful for
+  managing data like machine generated event data that are only useful
+  for a limited period of time.
 ...

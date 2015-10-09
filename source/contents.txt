@@ -8,11 +8,12 @@ project, this Manual and additional editions of this text.
 .. toctree::
    :titlesonly:
 
+   Introduction </introduction>
    Installation </installation>
    /shell
    /crud
    /aggregation
-   /applications/geospatial-indexes
+   Geo Search </applications/geospatial-indexes>
    Text Search </core/index-text>
    /indexes
    Storage </core/storage>

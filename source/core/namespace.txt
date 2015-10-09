@@ -1,0 +1,8 @@
+==========
+Namespaces
+==========
+
+.. default-domain:: mongodb
+
+This page will talk about what namespaces are, and why it's something
+you need to know.

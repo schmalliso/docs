@@ -7,8 +7,4 @@ file: /administration/data-management
 description: |
   Core documentation that addresses issues in data management,
   organization, maintenance, and lifecycle management.
----
-file: /administration/optimization
-description: |
-  Techniques for optimizing application performance with MongoDB.
 ...
