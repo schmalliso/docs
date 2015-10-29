@@ -1,0 +1,9 @@
+===================================
+Install MongoDB Enterprise on Linux
+===================================
+
+.. default-domain:: mongodb
+
+.. include:: /includes/toc/dfn-list-installation-enterprise-linux.rst
+
+.. include:: /includes/toc/installation-enterprise-linux.rst

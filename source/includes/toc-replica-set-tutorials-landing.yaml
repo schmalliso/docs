@@ -12,10 +12,4 @@ file: /administration/replica-set-maintenance
 description: |
   Procedures and tasks for common operations on active replica
   set deployments.
----
-file: /tutorial/troubleshoot-replica-sets
-description: |
-  Describes common issues and operational challenges for
-  replica sets. For additional diagnostic information, see
-  :doc:`/faq/diagnostics`.
 ...

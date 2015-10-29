@@ -13,13 +13,19 @@ description: |
    model, such as lifecycle management, indexing, horizontal
    scalability, and document growth.
 ---
-file: /applications/data-models
+file: /applications/data-models-relationships
+name: Model Relationships Between Documents
 description: |
-   Examples of possible data models that you can use to structure your
-   MongoDB documents.
+  Examples for modeling relationships between documents.
 ---
-file: /reference/data-models
+file: /applications/data-models-tree-structures
+name: Model Tree Structures
 description: |
-   Reference material for data modeling for developers of MongoDB
-   applications.
+  Examples for modeling tree structures.
+---
+file: /applications/data-models-applications
+name: Specific Use Case Patterns
+description: |
+  Examples of data models that support specific application contexts,
+  such as the need for atomic operations, monetary, or time data.
 ...

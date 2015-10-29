@@ -1,0 +1,12 @@
+=================================
+Install MongoDB Community Edition
+=================================
+
+.. default-domain:: mongodb
+
+These documents provide instructions to install MongoDB Community Edition for
+Linux, OS X, and Windows Systems.
+
+.. include:: /includes/toc/dfn-list-installation-community-landing.rst
+
+.. include:: /includes/toc/installation-community-landing.rst

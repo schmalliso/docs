@@ -1,6 +1,6 @@
 level: 1
 source:
-  file: toc-replication-core-landing.yaml
+  file: toc-replication-landing.yaml
   ref: /core/replica-set-members
 ---
 level: 2
@@ -30,12 +30,22 @@ source:
 ---
 level: 1
 source:
-  file: toc-replication-core-landing.yaml
+  file: toc-replication-landing.yaml
+  ref: /core/replica-set-oplog
+---
+level: 1
+source:
+  file: toc-replication-landing.yaml
+  ref: /core/replica-set-sync
+---
+level: 1
+source:
+  file: toc-replication-landing.yaml
   ref: /core/replica-set-architectures
 ---
 level: 1
 source:
-  file: toc-replication-core-landing.yaml
+  file: toc-replication-landing.yaml
   ref: /core/replica-set-high-availability
 ---
 level: 2
@@ -50,11 +60,6 @@ source:
 ---
 level: 1
 source:
-  file: toc-replication-core-landing.yaml
-  ref: /core/replication-process
----
-level: 1
-source:
-  file: toc-replication-core-landing.yaml
+  file: toc-replication-landing.yaml
   ref: /core/master-slave
 ...

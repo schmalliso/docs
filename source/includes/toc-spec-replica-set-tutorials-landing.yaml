@@ -85,9 +85,4 @@ description: Continue reading from :doc:`/administration/replica-set-maintenance
 level: 2
 ref: IAaerGsxfvfqePz
 text_only: true
----
-level: 1
-source:
-  file: toc-replica-set-tutorials-landing.yaml
-  ref: /tutorial/troubleshoot-replica-sets
 ...

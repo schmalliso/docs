@@ -6,32 +6,77 @@ source:
 level: 1
 source:
   file: toc-replication-landing.yaml
-  ref: /core/replication
----
-level: 2
-source:
-  file: toc-replication-core-landing.yaml
   ref: /core/replica-set-members
 ---
 level: 2
 source:
-  file: toc-replication-core-landing.yaml
-  ref: /core/replica-set-architectures
+  file: toc-replica-set-members.yaml
+  ref: /core/replica-set-primary
 ---
 level: 2
 source:
-  file: toc-replication-core-landing.yaml
+  file: toc-replica-set-members.yaml
+  ref: /core/replica-set-secondary
+---
+level: 2
+source:
+  file: toc-replica-set-members.yaml
+  ref: /core/replica-set-priority-0-member
+---
+level: 2
+source:
+  file: toc-replica-set-members.yaml
+  ref: /core/replica-set-hidden-member
+---
+level: 2
+source:
+  file: toc-replica-set-members.yaml
+  ref: /core/replica-set-arbiter
+---
+level: 1
+source:
+  file: toc-replication-landing.yaml
+  ref: /core/replica-set-oplog
+---
+level: 1
+source:
+  file: toc-replication-landing.yaml
+  ref: /core/replica-set-sync
+---
+level: 1
+source:
+  file: toc-replication-landing.yaml
+  ref: /core/replica-set-architectures
+---
+level: 1
+source:
+  file: toc-replication-landing.yaml
   ref: /core/replica-set-high-availability
 ---
 level: 2
 source:
-  file: toc-replication-core-landing.yaml
-  ref: /applications/replication
+  file: toc-replica-set-high-availability.yaml
+  ref: /core/replica-set-elections
+---
+level: 2
+source:
+  file: toc-replica-set-read-write-semantics.yaml
+  ref: /core/read-preference
+---
+level: 1
+source:
+  file: toc-replication-landing.yaml
+  ref: /core/master-slave
 ---
 level: 1
 source:
   file: toc-replication-landing.yaml
   ref: /administration/replica-sets
+---
+level: 1
+source:
+  file: toc-replication-landing.yaml
+  ref: /tutorial/troubleshoot-replica-sets
 ---
 level: 1
 source:

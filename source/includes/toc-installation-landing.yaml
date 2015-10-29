@@ -1,0 +1,15 @@
+file: /administration/install-community
+description: |
+  Instructions for installing MongoDB Community Edition.
+---
+file: /administration/install-enterprise
+description: |
+  MongoDB Enterprise is available for MongoDB Enterprise subscribers
+  and includes features such as support for SNMP
+  monitoring, LDAP authentication, Kerberos authentication, and System
+  Event Auditing.
+---
+file: /tutorial/verify-mongodb-packages
+description: |
+  Verify the integrity of MongoDB software installation packages.
+...

@@ -35,15 +35,7 @@ of MongoDB.
 
 .. include:: /includes/toc/dfn-list-spec-installation.rst
 
-.. include:: /includes/toc/install-on-linux-landing.rst
-
-.. include:: /includes/toc/installation-osx.rst
-
-.. include:: /includes/toc/installation-windows.rst
-
-.. include:: /includes/toc/installation-enterprise-landing.rst
-
-.. include:: /includes/toc/install-verify-files.rst
+.. include:: /includes/toc/installation-landing.rst
 
 First Steps with MongoDB
 ------------------------

@@ -7,6 +7,6 @@ Install MongoDB Enterprise
 These documents provide instructions to install MongoDB Enterprise for
 Linux and Windows Systems.
 
-.. include:: /includes/toc/dfn-list-installation-enterprise.rst
+.. include:: /includes/toc/dfn-list-installation-enterprise-landing.rst
 
-.. include:: /includes/toc/installation-enterprise.rst
+.. include:: /includes/toc/installation-enterprise-landing.rst

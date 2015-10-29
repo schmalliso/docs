@@ -3,9 +3,9 @@
 .. index:: references
 .. _database-references:
 
-===================
-Database References
-===================
+======
+DRRefs
+======
 
 .. default-domain:: mongodb
 

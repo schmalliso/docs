@@ -15,4 +15,9 @@ description: |
    Presents a data model that uses :ref:`references
    <data-modeling-referencing>` to describe one-to-many relationships
    between documents.
+---
+file: /reference/database-references
+description: |
+  Discusses manual references and DBRefs, which MongoDB can use to
+  represent relationships between documents.
 ...

@@ -1,0 +1,12 @@
+file: /administration/install-on-linux
+description: |
+  Install the official builds of MongoDB Enterprise on Linux-based system.
+---
+file: /tutorial/install-mongodb-on-os-x
+name: Install on OS X
+description: "Install the official build of MongoDB on OS X systems from Homebrew packages or from MongoDB archives."
+---
+file: /tutorial/install-mongodb-on-windows
+name: Install on Windows
+description: "Install MongoDB on Windows systems and optionally start MongoDB as a Windows service."
+...

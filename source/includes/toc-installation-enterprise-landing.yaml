@@ -1,7 +1,8 @@
-file: /administration/install-enterprise
+file: /administration/install-enterprise-linux
 description: |
-  MongoDB Enterprise is available for MongoDB Enterprise subscribers
-  and includes several additional features including support for SNMP
-  monitoring, LDAP authentication, Kerberos authentication, and System
-  Event Auditing.
+  Install the official builds of MongoDB Enterprise on Linux-based system.
+---
+file: /tutorial/install-mongodb-enterprise-on-windows
+name: Install MongoDB Enterprise on Windows
+description: "Install the MongoDB Enterprise build and required dependencies using the ``.msi`` installer."
 ...
