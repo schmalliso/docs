@@ -1,11 +1,22 @@
 file: /administration/analyzing-mongodb-performance
 description: "Discusses some of the factors that can influence MongoDB's performance."
 ---
-file: /tutorial/performance
+file: /administration/database-profiler
 description: |
   [words]
 ---
-file: /reference/performance
+file: /administration/server-status
 description: |
   [words]
+---
+file: /tutorial/transparent-huge-pages
+description: |
+  Describes Transparent Huge Pages (THP) and provides detailed
+  instructions on disabling them.
+---
+file: /reference/ulimit
+description: |
+  Describes user resources limits (i.e. ``ulimit``) and introduces the
+  considerations and optimal configurations for systems that run
+  MongoDB deployments.
 ...

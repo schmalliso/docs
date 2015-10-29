@@ -6,40 +6,45 @@ source:
 level: 1
 source:
   file: toc-administration-optimization.yaml
-  ref: /tutorial/performance
+  ref: /administration/database-profiler
 ---
 level: 2
 source:
-  file: toc-administration-performance-tutorials.yaml
-  ref: /tutorial/transparent-huge-pages
----
-level: 2
-source:
-  file: toc-administration-performance-tutorials.yaml
-  ref: /tutorial/evaluate-operation-performance
----
-level: 2
-source:
-  file: toc-administration-performance-tutorials.yaml
+  file: toc-administration-performance-profiler.yaml
   ref: /tutorial/manage-the-database-profiler
+---
+level: 2
+source:
+  file: toc-administration-performance-profiler.yaml
+  ref: /reference/database-profiler
+---
+level: 2
+source:
+  file: ref-toc-method-database.yaml
+  ref: /reference/method/db.setProfilingLevel
 ---
 level: 1
 source:
   file: toc-administration-optimization.yaml
-  ref: /reference/performance
+  ref: /administration/server-status
 ---
 level: 2
 source:
-   file: toc-administration-performance-reference.yaml
-   ref: /reference/ulimit
+  file: toc-administration-performance-server-status.yaml
+  ref: /reference/server-status
 ---
 level: 2
 source:
-   file: toc-administration-performance-reference.yaml
-   ref: /reference/database-profiler
+  file: ref-toc-command-diagnostic.yaml
+  ref: /reference/command/serverStatus
 ---
-level: 2
+level: 1
 source:
-   file: toc-administration-performance-reference.yaml
-   ref: /reference/server-status
+  file: toc-administration-optimization.yaml
+  ref: /tutorial/transparent-huge-pages
+---
+level: 1
+source:
+  file: toc-administration-optimization.yaml
+  ref: /reference/ulimit
 ...

@@ -1,0 +1,9 @@
+=================
+Database Profiler
+=================
+
+.. default-domain:: mongodb
+
+.. include:: /includes/toc/dfn-list-administration-performance-profiler.rst
+
+.. include:: /includes/toc/administration-performance-profiler.rst

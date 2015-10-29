@@ -6,12 +6,12 @@ source:
 level: 1
 source:
   file: toc-administration-landing-new.yaml
-  ref: /administration/production-checklist
+  ref: /administration/production-checklist-operations
 ---
 level: 1
 source:
   file: toc-administration-landing-new.yaml
-  ref: /applications/design-notes
+  ref: /administration/production-checklist-development
 ---
 level: 1
 source:
@@ -26,12 +26,12 @@ source:
 level: 2
 source:
   file: toc-administration-optimization.yaml
-  ref: /tutorial/performance
+  ref: /administration/database-profiler
 ---
 level: 2
 source:
   file: toc-administration-optimization.yaml
-  ref: /reference/performance
+  ref: /administration/server-status
 ---
 level: 1
 source:

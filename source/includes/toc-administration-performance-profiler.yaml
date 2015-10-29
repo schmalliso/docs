@@ -1,0 +1,15 @@
+file: /tutorial/manage-the-database-profiler
+description: |
+  Collect data that introspects the performance of query and update
+  operations on a :program:`mongod` instance.
+---
+file: /reference/database-profiler
+description: |
+  Describes the data collected by MongoDB's operation profiler, which
+  introspects operations and reports data for analysis on performance
+  and behavior.
+---
+file: /reference/method/db.setProfilingLevel
+description: |
+  [words]
+...

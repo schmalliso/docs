@@ -4,17 +4,20 @@ description: |
   considerations for the operations of MongoDB instances and
   deployments.
 ---
-file: /administration/production-checklist
+file: /administration/production-checklist-operations
+name: "Production Operations Checklist"
 description: |
-  Checklist of recommendations for deploying
-  MongoDB in production.
+  Checklist of recommendations for maintaining MongoDB in
+  production.
 ---
-file: /applications/design-notes
+file: /administration/production-checklist-development
+name: "Production Development Checklist"
 description: |
-  A collection of notes related to the architecture, design, and
-  administration of MongoDB-based applications.
+  Checklist of recommendations for developing MongoDB applications
+  for production.
 ---
 file: /administration/performance
+name: "Performance Optimization"
 description: |
   [words]
 ---

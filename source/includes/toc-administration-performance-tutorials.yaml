@@ -1,8 +1,4 @@
-file: /tutorial/transparent-huge-pages
-description: |
-  Describes Transparent Huge Pages (THP) and provides detailed
-  instructions on disabling them.
----
+
 file: /tutorial/evaluate-operation-performance
 description: "MongoDB provides introspection tools that describe the query execution process, to allow users to test queries and build more efficient queries."
 ---

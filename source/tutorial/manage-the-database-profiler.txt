@@ -1,8 +1,8 @@
 .. _database-profiler:
 
-==========================================
-Analyze Performance of Database Operations
-==========================================
+==========================
+Database Profiler Overview
+==========================
 
 .. default-domain:: mongodb
 

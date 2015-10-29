@@ -1,0 +1,9 @@
+=============
+Server Status
+=============
+
+.. default-domain:: mongodb
+
+.. include:: /includes/toc/dfn-list-administration-performance-server-status.rst
+
+.. include:: /includes/toc/administration-performance-server-status.rst
