@@ -1,0 +1,7 @@
+=============================================
+Common Commands in the :program:`mongo` Shell
+=============================================
+
+.. default-domain:: mongodb
+
+[This is a stub.]

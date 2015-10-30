@@ -2,17 +2,65 @@ file: /core/indexes-introduction
 description: |
    An introduction to indexes in MongoDB.
 ---
-file: /core/indexes
-description: |
-   The core documentation of indexes in MongoDB, including geospatial
-   and text indexes.
----
-file: /administration/indexes
-description: |
-   Examples of operations involving indexes, including index creation
-   and querying indexes.
----
 file: /reference/indexes
+name: "Index Quick Reference"
 description: |
-   Reference material for indexes in MongoDB.
+  Reference material for indexes in MongoDB.
+---
+file: /core/index-single
+description: |
+  A single field index only includes data from a single field of the
+  documents in a collection. MongoDB supports single field indexes on
+  fields at the top level of a document *and* on fields in sub-documents.
+---
+file: /core/index-compound
+description: |
+   A compound index includes more than one field of the documents in a
+   collection.
+---
+file: /core/index-multikey
+description: |
+   A multikey index is an index on an array field, adding an index key
+   for each value in the array.
+---
+file: /core/index-hashed
+description: |
+   Hashed indexes maintain entries with hashes of the values of the
+   indexed field and are primarily used with sharded clusters to
+   support hashed shard keys.
+---
+file: /core/index-ttl
+description: |
+   The TTL index is used for TTL collections, which expire data after a
+   period of time.
+---
+file: /core/index-unique
+description: |
+   A unique index causes MongoDB to reject all documents that contain
+   a duplicate value for the indexed field.
+---
+file: /core/index-sparse
+description: |
+   A sparse index does not index documents that do not have the indexed
+   field.
+---
+file: /administration/indexes-management
+name: "Index Management"
+description: |
+   Monitor and assess index performance and rebuild indexes as needed.   
+---
+file: /tutorial/build-indexes-on-replica-sets
+description: |
+   To build indexes on a replica set, you build the indexes separately
+   on the primary and the secondaries, as described here.
+---
+file: /tutorial/build-indexes-in-the-background
+description: |
+   Background index construction allows read and write operations to
+   continue while building the index, but take longer to complete and
+   result in a larger index.
+---
+file: /applications/indexes
+description: |
+  [words]
 ...

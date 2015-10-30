@@ -168,3 +168,9 @@ document:
 
 See :ref:`query-embedded-documents` for more information regarding querying
 on embedded documents.
+
+.. class:: hidden
+
+   .. toctree::
+   
+      /tutorial/create-an-index

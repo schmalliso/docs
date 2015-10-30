@@ -123,3 +123,10 @@ Additional Information
 ----------------------
 
 For examples, see :doc:`/tutorial/expire-data`.
+
+.. class:: hidden
+
+   .. toctree::
+
+      /tutorial/create-a-ttl-index
+      /tutorial//expire-data

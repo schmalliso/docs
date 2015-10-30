@@ -2,10 +2,14 @@ file: /tutorial/getting-started-with-the-mongo-shell
 description: |
   Introduces the use and operation of the MongoDB shell.
 ---
-file: /tutorial/access-mongo-shell-help
+file: /reference/common-commands
+name: "Common Commands"
 description: |
-  Describes the available methods for accessing online help for the
-  operation of the :program:`mongo` interactive shell.
+  [words]
+---
+file: /tutorial/crud-operations-in-the-mongo-shell
+description: |
+  [words]
 ---
 file: /core/shell-types
 description: |
@@ -22,6 +26,11 @@ description: |
   An introduction to the scripting capabilities of the
   :program:`mongo` shell and the scripting capabilities embedded in
   MongoDB instances.
+---
+file: /tutorial/access-mongo-shell-help
+description: |
+  Describes the available methods for accessing online help for the
+  operation of the :program:`mongo` interactive shell.
 ---
 file: /reference/mongo-shell
 description: |

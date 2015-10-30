@@ -23,17 +23,6 @@ description: |
    the hashed value. These indexes permit equality queries and may
    be suitable shard keys for some collections.
 ---
-file: /tutorial/build-indexes-on-replica-sets
-description: |
-   To build indexes on a replica set, you build the indexes separately
-   on the primary and the secondaries, as described here.
----
-file: /tutorial/build-indexes-in-the-background
-description: |
-   Background index construction allows read and write operations to
-   continue while building the index, but take longer to complete and
-   result in a larger index.
----
 file: /tutorial/roll-back-to-v1.8-index
 description: |
    A ``{v : 0}`` index is necessary if you need to roll

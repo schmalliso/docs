@@ -183,3 +183,5 @@ indexes and queries:
 .. include:: /includes/toc/dfn-list-indexes-concepts-geo.rst
 
 .. include:: /includes/toc/indexes-concepts-geo.rst
+
+.. include:: /includes/toc/indexes-tutorial-geo.rst

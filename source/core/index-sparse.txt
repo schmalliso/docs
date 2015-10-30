@@ -215,3 +215,9 @@ and ``90``:
 
    db.scores.insert( { "userid": "AAAAAAA", "score": 82 } )
    db.scores.insert( { "userid": "BBBBBBB", "score": 90 } )
+
+.. class:: hidden
+
+   .. toctree::
+
+      /tutorial/create-a-sparse-index

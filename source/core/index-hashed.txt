@@ -48,3 +48,9 @@ the ``a`` field.
    removed 6 months ago.
    .. [#hash-size] The hash stored in the ``hashed`` index is 64 bits of the
       128 bit ``md5`` hash.
+
+.. class:: hidden
+
+   .. toctree::
+
+      /tutorial/create-a-hashed-index

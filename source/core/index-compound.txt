@@ -159,3 +159,11 @@ Index Intersection
 ------------------
 
 .. include:: /includes/fact-index-intersection-vs-compound-indexes.rst
+
+
+.. class:: hidden
+
+   .. toctree::
+
+      /tutorial/create-a-compound-index
+      /tutorial/create-indexes-to-support-queries

@@ -13,13 +13,6 @@ description: |
   processing quantities of data. MongoDB provides map-reduce with the
   :dbcommand:`mapReduce` database command.
 ---
-file: /core/single-purpose-aggregation
-description: |
-  MongoDB provides a collection of specific data aggregation
-  operations to support a number of common data aggregation
-  functions. These operations include returning counts of documents,
-  distinct values of a field, and simple grouping operations.
----
 file: /core/aggregation-mechanics
 description: |
   Details internal optimization operations, limits, support for sharded

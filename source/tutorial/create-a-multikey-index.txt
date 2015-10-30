@@ -1,0 +1,7 @@
+=======================
+Create a Multikey Index
+=======================
+
+.. default-domain:: mongodb
+
+[this is a stub]

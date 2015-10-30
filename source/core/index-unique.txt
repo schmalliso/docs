@@ -110,3 +110,9 @@ You may not specify a unique constraint on a :ref:`hashed
 index <index-type-hashed>`.
 
 .. seealso:: :doc:`/tutorial/create-a-unique-index`
+
+.. class:: hidden
+
+   .. toctree::
+
+      /tutorial/create-a-unique-index

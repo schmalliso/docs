@@ -218,3 +218,5 @@ match the document. However, a search on either ``blueberry`` or
 For information and examples on various text search patterns, see the
 :query:`$text` query operator. For examples of text search in
 aggregation pipeline, see :doc:`/tutorial/text-search-in-aggregation`.
+
+.. include:: /includes/toc/indexes-tutorial-text.rst
