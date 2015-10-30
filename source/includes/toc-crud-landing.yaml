@@ -1,15 +1,45 @@
 file: /core/crud-introduction
 description: "An introduction to the MongoDB data model as well as queries and data manipulations."
 ---
+file: /reference/sql-comparison
+description: |
+  An overview of common database operations showing both the MongoDB
+  operations and SQL statements.
+---
+file: /tutorial/insert-documents
+description: |
+  Insert new documents into a collection.
+---
+file: /tutorial/query-documents
+description: |
+  Find documents in a collection using search criteria.
+---
+file: /tutorial/modify-documents
+description: |
+  Modify documents in a collection
+---
+file: /tutorial/remove-documents
+description: |
+  Remove documents from a collection.
+---
 file: /core/read-operations
 description: "Queries are the core operations that return data in MongoDB. Introduces queries, their behavior, and performances."
 ---
 file: /core/write-operations
 description: "Write operations insert, update, or remove documents in MongoDB. Introduces data create and modify operations, their behavior, and performances."
 ---
-file: /applications/crud
-description: "Examples of basic query and data modification operations."
+file: /core/query-performance
+description: |
+  [This document, which doesn't exist, is the landing page for Query and Write Op
+  Performance docs.]
 ---
-file: /reference/crud
-description: "Reference material for the query and data manipulation interfaces."
+file: /core/distributed-operations
+description: |
+  Describes how MongoDB directs query write operations on :term:`sharded
+  clusters <sharded cluster>` and :term:`replica sets <replica
+  set>` and the performance characteristics of these operations.
+---
+file: /applications/crud-common-operations
+description: |
+  Examples of common data create and modify operations.
 ...

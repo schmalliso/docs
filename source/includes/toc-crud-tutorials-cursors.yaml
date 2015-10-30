@@ -1,3 +1,7 @@
+file: /core/cursors
+description: |
+  [words]
+---
 file: /tutorial/iterate-a-cursor
 description: |
   Access documents returned by a :method:`find <db.collection.find>`

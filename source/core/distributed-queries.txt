@@ -1,5 +1,6 @@
 .. index:: read operation; architecture
 .. _read-operations-architecture:
+:orphan:
 
 ===================
 Distributed Queries
@@ -9,6 +10,8 @@ Distributed Queries
 
 .. might make sense to break this in half and move it to
    replication/sharding and cross reference here?
+
+.. begin-include
 
 Read Operations to Sharded Clusters
 -----------------------------------
@@ -86,3 +89,5 @@ modes, see :doc:`/core/read-preference` and
 .. [#edge-cases-2-primaries]
 
    .. include:: /includes/footnote-two-primaries-edge-cases.rst
+
+.. end-include

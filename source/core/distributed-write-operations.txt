@@ -1,8 +1,12 @@
+:orphan:
+
 ============================
 Distributed Write Operations
 ============================
 
 .. default-domain:: mongodb
+
+.. begin-include
 
 .. _write-operations-sharded-clusters:
 
@@ -86,3 +90,5 @@ For more information on replica sets and write operations, see
    primary.
 
    .. include:: /includes/fact-master-slave-majority.rst
+
+.. end-include

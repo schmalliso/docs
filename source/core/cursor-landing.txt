@@ -1,0 +1,7 @@
+=======
+Cursors
+=======
+
+.. default-domain:: mongodb
+
+.. include:: /includes/toc/crud-tutorials-cursors.rst

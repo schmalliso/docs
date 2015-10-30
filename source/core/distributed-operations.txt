@@ -1,0 +1,24 @@
+======================
+Distributed Operations
+======================
+
+.. default-domain:: mongodb
+
+.. heading structure:
+..    h1 =
+..    h2 #
+..    h3 - (in includes); h4 ~ (in includes)
+
+Distributed Queries
+###################
+
+.. include:: /core/distributed-queries.txt
+   :start-after: begin-include
+   :end-before: end-include
+
+Distributed Write Operations
+############################
+
+.. include:: /core/distributed-write-operations.txt
+   :start-after: begin-include
+   :end-before: end-include

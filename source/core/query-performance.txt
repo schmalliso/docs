@@ -1,0 +1,7 @@
+===========
+Performance
+===========
+
+.. default-domain:: mongodb
+
+.. include:: /includes/toc/crud-tutorials-performance.rst

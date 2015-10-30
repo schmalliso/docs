@@ -1,3 +1,6 @@
+file: /core/query-optimization
+description: "Analyze and improve query performance."
+---
 file: /tutorial/analyze-query-plan
 description: |
   Use query introspection (i.e. ``explain``) to analyze the efficiency
@@ -5,4 +8,11 @@ description: |
 ---
 file: /tutorial/optimize-query-performance-with-indexes-and-projections
 description: "Introduces the use of :ref:`projections <projections>` to reduce the amount of data MongoDB sends to clients."
+---
+file: /core/write-performance
+description: "Introduces the performance constraints and factors for writing data to MongoDB deployments."
+---
+file: /reference/explain-results
+description: |
+  Documentation on information returned from explain operations.
 ...

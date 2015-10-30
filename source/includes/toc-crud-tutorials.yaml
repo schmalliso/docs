@@ -1,23 +1,3 @@
-file: /tutorial/insert-documents
-description: |
-  Insert new documents into a collection.
----
-file: /tutorial/query-documents
-description: |
-  Find documents in a collection using search criteria.
----
-file: /tutorial/modify-documents
-description: |
-  Modify documents in a collection
----
-file: /tutorial/remove-documents
-description: |
-  Remove documents from a collection.
----
-file: /applications/crud-common-operations
-description: |
-  Examples of common data create and modify operations.
----
 file: /applications/crud-query-performance
 description: |
   Analyze and improve query performance.
@@ -25,9 +5,4 @@ description: |
 file: /applications/crud-cursors
 description: |
   Queries return iterable objects, called cursors, that hold the full result set.
----
-description: |
-file: /tutorial/perform-two-phase-commits
-description: |
-  Use two-phase commits when writing data to multiple documents.
 ...
