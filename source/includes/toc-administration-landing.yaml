@@ -8,6 +8,11 @@ description: |
   Tutorials that describe common administrative procedures and
   practices for operations for MongoDB instances and deployments.
 ---
+file: /core/backups
+description: |
+  Outlines procedures for data backup and restoration with
+  :program:`mongod` instances and deployments.
+---
 file: /reference/administration
 description: |
   Reference and documentation of internal mechanics of administrative

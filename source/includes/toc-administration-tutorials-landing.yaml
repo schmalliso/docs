@@ -3,11 +3,6 @@ description: |
   Describes routine management operations, including configuration and
   performance analysis.
 ---
-file: /administration/backup
-description: |
-  Outlines procedures for data backup and restoration with
-  :program:`mongod` instances and deployments.
----
 file: /administration/scripting
 description: |
   An introduction to the scripting capabilities of the

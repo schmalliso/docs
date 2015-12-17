@@ -6,11 +6,6 @@ source:
 level: 2
 source:
   file: toc-administration-core-strategy.yaml
-  ref: /core/backups
----
-level: 2
-source:
-  file: toc-administration-core-strategy.yaml
   ref: /administration/monitoring
 ---
 level: 2

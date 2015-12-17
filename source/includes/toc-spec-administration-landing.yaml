@@ -6,11 +6,6 @@ source:
 level: 2
 source:
   file: toc-administration-core-strategy.yaml
-  ref: /core/backups
----
-level: 2
-source:
-  file: toc-administration-core-strategy.yaml
   ref: /administration/monitoring
 ---
 level: 2
@@ -27,17 +22,17 @@ text_only: true
 level: 1
 source:
   file: toc-administration-landing.yaml
+  ref: /core/backups
+---
+level: 1
+source:
+  file: toc-administration-landing.yaml
   ref: /administration/tutorials
 ---
 level: 2
 source:
   file: toc-administration-tutorials-landing.yaml
   ref: /administration/maintenance
----
-level: 2
-source:
-  file: toc-administration-tutorials-landing.yaml
-  ref: /administration/backup
 ---
 description: Continue reading from :doc:`/administration/tutorials` for more tutorials
   of common MongoDB maintenance operations.
