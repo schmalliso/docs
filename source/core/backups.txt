@@ -6,74 +6,78 @@ MongoDB Backup Methods
 
 When deploying MongoDB in production, you should have a strategy for
 capturing and restoring backups in the case of data loss
-events. There are several ways to back up MongoDB clusters:
+events. 
 
-- :ref:`backup-with-file-copies`
-- :ref:`backup-and-restore-tools`
-- :ref:`backup-with-mms`
-- :ref:`backup-with-mms-onprem`
+Back Up with |MMS| or Ops Manager
+---------------------------------
 
-.. _backup-with-file-copies:
+|MMS| is a hosted back up, monitoring, and automation service for
+MongoDB. |mms-home| supports backing up and restoring MongoDB
+:term:`replica sets <replica set>` and :term:`sharded clusters <sharded
+cluster>` from a convenient graphical user interface.
 
-Backup by Copying Underlying Data Files
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _backup-with-mms:
 
-You can create a backup by copying MongoDB's underlying data
-files.
+|MMS|
+~~~~~
 
-If the volume where MongoDB stores data files supports point in time
-snapshots, you can use these snapshots to create backups of a MongoDB
-system at an exact moment in time.
+The |mms-home| supports the backing up and restoring of MongoDB
+deployments.
 
-File systems snapshots are an operating system volume manager feature,
-and are not specific to MongoDB. The mechanics of snapshots depend on
-the underlying storage system. For example, if you use
-Amazon’s EBS storage system for EC2 supports snapshots. On
-Linux the LVM manager can create a snapshot.
+|MMS| continually backs up MongoDB :term:`replica sets <replica set>`
+and :temr:`sharded clusters <sharded cluster>` by reading the
+:term:`oplog` data from your MongoDB deployment. |MMS| creates snapshots
+of your data at set intervals, and can also offer point-in-time recovery
+of MongoDB replica sets and sharded clusters.
 
-To get a correct snapshot of a running :program:`mongod` process, you
-must have journaling enabled and the journal must reside on the same
-logical volume as the other MongoDB data files. Without journaling
-enabled, there is no guarantee that the snapshot
-will be consistent or valid.
+.. tip:: 
+   Sharded cluster snapshots are difficult to achieve with other MongoDB
+   backup methods.
 
-To get a consistent snapshot of a sharded system, you must disable the
-balancer and capture a snapshot from every shard and a config server at
-approximately the same moment in time.
+|MMS| achieves point-in-time recovery by storing oplog data so that it
+can create a restore for any moment in time in the last 24 hours for a
+particular replica set or sharded cluster. 
 
-If your storage system does not support snapshots, you can copy the
-files directly using ``cp``, ``rsync``, or a similar tool. Since
-copying multiple files is not an atomic operation, you must stop all
-writes to the :program:`mongod` before copying the files. Otherwise, you will
-copy the files in an invalid state.
+To restore a MongoDB deployment from an |MMS| snapshot, you download
+a compressed archive of your MongoDB data files and distribute those
+files before restarting the :program:`mongod` processes. |MMS| can also
+delivery the files directly to your servers using SCP.
 
-Backups produced by copying the underlying data do not support point
-in time recovery for replica sets and are difficult to manage for
-larger sharded clusters. Additionally, these backups are larger
-because they include the indexes and duplicate underlying storage
-padding and fragmentation. :program:`mongodump`, by contrast, creates
-smaller backups.
+To get started with |MMS| Backup, sign up for |mms-home|. For
+documentation on |MMS|, see the |mms-docs|.
 
-For more information, see the
-:doc:`/tutorial/backup-with-filesystem-snapshots` and
-:doc:`/tutorial/backup-sharded-cluster-with-filesystem-snapshots` for
-complete instructions on using LVM to create snapshots. Also see
-:ecosystem:`Back up and Restore Processes for MongoDB on Amazon EC2
-</tutorial/backup-and-restore-mongodb-on-amazon-ec2>`.
+.. include:: /includes/replacement-mms.rst
+
+.. _backup-with-mms-onprem:
+
+Ops Manager
+~~~~~~~~~~~
+
+With Ops Manager, MongoDB Subscribers can install and run the same core
+software that powers :ref:`backup-with-mms` on their own infrastructure.
+Ops Manager is an on-premise solution and has similar functionality to
+the cloud version and is available with Enterprise Advanced
+subscriptions.
+
+For more information about Ops Manager, see the `MongoDB Enterprise
+Advanced
+<https://www.mongodb.com/products/mongodb-enterprise-advanced?jmp=docs>`_ page
+and the :opsmgr:`Ops Manager Manual </>`.
 
 .. _backup-with-mongodump:
 
-Backup with ``mongodump``
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Back Up with ``mongodump``
+-------------------------
 
-The :program:`mongodump` tool reads data from a MongoDB database and
-creates high fidelity BSON files. The :program:`mongorestore`
-tool can populate a MongoDB database with the data from these BSON
-files. These tools are simple and efficient for backing up small
+:program:`mongodump` reads data from a MongoDB database and
+creates high fidelity BSON files which the :program:`mongorestore`
+tool can use to populate a MongoDB database.
+:program:`mongodump` and :program:`mongorestore` are simple and
+efficient tools for backing up and restoring small
 MongoDB deployments, but are not ideal for capturing backups of larger
 systems.
 
-:program:`mongodump` and :program:`mongorestore` can operate against a
+:program:`mongodump` and :program:`mongorestore` operate against a
 running :program:`mongod` process, and can manipulate the underlying
 data files directly. By default, :program:`mongodump` does not
 capture the contents of the :doc:`local database </reference/local-database>`.
@@ -85,16 +89,11 @@ resulting backup is space efficient, but :program:`mongorestore` or
 When connected to a MongoDB instance, :program:`mongodump` can
 adversely affect :program:`mongod` performance. If your data is larger
 than system memory, the queries will push the working set out of
-memory.
+memory, causing :ref:`page faults <administration-monitoring-page-faults>`.
 
 To mitigate the impact of :program:`mongodump` on the performance of
-the replica set, use :program:`mongodump` to capture backups from a
+a replica set, use :program:`mongodump` to capture backups from a
 :doc:`secondary </core/replica-set-secondary>` member of a replica set.
-Alternatively, you can shut down a secondary and use
-:program:`mongodump` with the data files directly. If you shut down a
-secondary to capture data with :program:`mongodump` ensure that the
-operation can complete before its oplog becomes too stale to continue
-replicating.
 
 For replica sets, :program:`mongodump` also supports a point in time
 feature with the :option:`--oplog <mongodump --oplog>`
@@ -106,57 +105,68 @@ backup created with :option:`--oplog <mongodump --oplog>`, use
 
 If applications modify data while :program:`mongodump` is creating a
 backup, :program:`mongodump` will compete for resources with
-those applications.
+those applications, which can affect the :program:`mongod`'s performance.
 
-See :doc:`/tutorial/backup-and-restore-tools`,
-:doc:`/tutorial/backup-small-sharded-cluster-with-mongodump`,
-and :doc:`/tutorial/backup-sharded-cluster-with-database-dumps`
-for more information.
+.. see:: 
+   :doc:`/tutorial/backup-and-restore-tools`,
+   :doc:`/tutorial/backup-small-sharded-cluster-with-mongodump`, and
+   :doc:`/tutorial/backup-sharded-cluster-with-database-dumps` for more
+   information.
 
-.. _backup-with-mms:
+.. _backup-with-file-copies:
 
-|MMS| Backup
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Back Up by Copying Underlying Data Files
+----------------------------------------
 
-The |mms-home|
-supports the backing up and restoring of MongoDB deployments.
+Back Up with Filesystem Snapshots
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-|MMS| continually backs up MongoDB replica sets and sharded
-clusters by reading the oplog data from your MongoDB deployment.
+You can create a backup of a MongoDB deployment by making a copy of MongoDB's
+underlying data files.
 
-|MMS| Backup offers point in time recovery of MongoDB replica sets and a
-consistent snapshot of sharded clusters.
+If the volume where MongoDB stores its data files supports point-in-time
+snapshots, you can use these snapshots to create backups of a MongoDB
+system at an exact moment in time.
+File system snapshots are an operating system volume manager feature,
+and are not specific to MongoDB. With file system snapshots, the operating
+system takes a snapshot of the volume to use as a baseline for data backup.
+ The mechanics of snapshots depend on
+the underlying storage system. For example, on Linux, the Logical Volume
+Manger (LVM), can create snapshots. Similarly, Amazon’s EBS storage
+system for EC2 supports snapshots.
 
-|MMS| achieves point in time recovery by storing oplog data so that it
-can create a restore for any moment in time in the last 24 hours for a
-particular replica set or sharded cluster.
-Sharded cluster snapshots are difficult to achieve
-with other MongoDB backup methods.
+To get a correct snapshot of a running :program:`mongod` process, you
+must have journaling enabled and the journal must reside on the same
+logical volume as the other MongoDB data files. Without journaling
+enabled, there is no guarantee that the snapshot will be consistent or
+valid.
 
-To restore a MongoDB deployment from an |MMS| Backup snapshot, you download
-a compressed archive of your MongoDB data files and distribute those
-files before restarting the :program:`mongod` processes.
+To get a consistent snapshot of a :term:`sharded cluster`, you must
+disable the balancer and capture a snapshot from every shard as well as a
+config server at approximately the same moment in time.
 
-To get started with |MMS| Backup, sign up for |mms-home|. For
-documentation on |MMS|, see the |mms-docs|.
+For more information, see the
+:doc:`/tutorial/backup-with-filesystem-snapshots` and
+:doc:`/tutorial/backup-sharded-cluster-with-filesystem-snapshots` for
+complete instructions on using LVM to create snapshots. Also see
+:ecosystem:`Back up and Restore Processes for MongoDB on Amazon EC2
+</tutorial/backup-and-restore-mongodb-on-amazon-ec2>`.
 
-.. include:: /includes/replacement-mms.rst
+Back Up with ``cp`` or ``rsync``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. _backup-with-mms-onprem:
+If your storage system does not support snapshots, you can copy the
+files directly using ``cp``, ``rsync``, or a similar tool. Since
+copying multiple files is not an atomic operation, you must stop all
+writes to the :program:`mongod` before copying the files. Otherwise, you will
+copy the files in an invalid state.
 
-Ops Manager Backup Software
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-MongoDB Subscribers can install and run the same core software that
-powers :ref:`backup-with-mms` on their own infrastructure. Ops Manager,
-an on-premise solution, has
-similar functionality to the cloud version and is available with
-Enterprise Advanced subscriptions.
-
-For more information about Ops Manager, see the `MongoDB Enterprise
-Advanced
-<https://www.mongodb.com/products/mongodb-enterprise-advanced?jmp=docs>`_ page
-and the :opsmgr:`Ops Manager Manual </>`.
+Backups produced by copying the underlying data do not support point
+in time recovery for :term:`replica sets` and are difficult to manage for
+larger sharded clusters. Additionally, these backups are larger
+because they include the indexes and duplicate underlying storage
+padding and fragmentation. :program:`mongodump`, by contrast, creates
+smaller backups.
 
 Further Reading
 ---------------
