@@ -170,4 +170,4 @@ of the following steps for each shard in your cluster:
    .. toctree::
       :titlesonly:
 
-      /tutorial/change-own-password-and-custom-data
+      /tutorial/create-users
