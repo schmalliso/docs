@@ -108,6 +108,8 @@ MongoDB provides methods to create and modify :doc:`user-defined roles
    .. toctree::
       :titlesonly:
 
+      /tutorial/enable-authentication
       /core/security-built-in-roles
       /core/security-user-defined-roles
+      /tutorial/manage-users-and-roles
       /core/collection-level-access-control
