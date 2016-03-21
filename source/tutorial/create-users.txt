@@ -1,0 +1,32 @@
+=========
+Add Users
+=========
+
+.. _add-new-user:
+
+Add a User
+----------
+
+To create a user, specify the user name, password, and :ref:`roles
+<roles>`. For users that authenticate using external mechanisms
+[#external-auth-mechanisms]_, you do not need to provide the password
+when creating users.
+
+When assigning roles, select the roles that have the exact required
+:ref:`privileges <privileges>`. If the correct roles does not exist,
+you can :ref:`create new roles <create-user-defined-role>`.
+
+.. [#external-auth-mechanisms] See :ref:`security-auth-x509`,
+   :ref:`security-auth-kerberos`, and :ref:`security-auth-ldap`
+   
+.. _add-user-prereq:
+
+Prerequisites
+~~~~~~~~~~~~~
+
+.. include:: /includes/access-create-user.rst
+
+Procedure
+~~~~~~~~~
+
+.. include:: /includes/steps/add-user-to-database.rst
