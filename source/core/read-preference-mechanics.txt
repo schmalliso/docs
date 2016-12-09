@@ -35,12 +35,7 @@ settings.
 
 The read preference is re-evaluated for each operation.
 
-.. versionadded:: 3.4
-   MongoDB 3.4 adds the ``maxStalenessSeconds`` read preference option,
-   which lets you specify a maximum replication lag, or "staleness",
-   for reads from :term:`secondaries <secondary>`. When a secondary's
-   estimated staleness exceeds ``maxStalenessSeconds``, the client
-   stops using it for read operations.
+.. include:: /includes/fact-3.4-added-maxStalenessSeconds.rst
 
 .. include:: /includes/extracts/server-selection-read-preference-replica-sets.rst
 
@@ -72,12 +67,7 @@ applies the read preference when reading from the shards. Server
 selection is governed by the :doc:`read preference
 </core/read-preference>` and :setting:`replication.localPingThresholdMs` settings.
 
-.. versionadded:: 3.4
-   MongoDB 3.4 adds the ``maxStalenessSeconds`` read preference option,
-   which lets you specify a maximum replication lag, or "staleness",
-   for reads from :term:`secondaries <secondary>`. When a secondary's
-   estimated staleness exceeds ``maxStalenessSeconds``, the client
-   stops using it for read operations.
+.. include:: /includes/fact-3.4-added-maxStalenessSeconds.rst
 
 .. versionchanged:: 3.0
 

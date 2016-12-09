@@ -143,17 +143,18 @@ behavior <replica-set-read-preference-behavior>`. See also the
 .. versionadded:: 3.4
 
 Replica set members can lag behind the :term:`primary` due to network
-latency, low disk throughput, long-running operations, etc. The read
+congestion, low disk throughput, long-running operations, etc. The read
 preference ``maxStalenessSeconds`` option lets you specify a maximum
 replication lag, or "staleness", for reads from :term:`secondaries
 <secondary>`. When a secondary's estimated staleness exceeds
 ``maxStalenessSeconds``, the client stops using it for read operations.
 
-.. important::
-   To use ``maxStalenessSeconds``, all of the
-   MongoDB instances in your deployment must be using MongoDB 3.4 or
-   later. If any instances are on an earlier version of MongoDB, the
-   driver or :program:`mongos` will raise an error.
+.. include:: /includes/fact-important-maxStalenessSeconds-intended-use.rst
+
+To use ``maxStalenessSeconds``, all of the
+MongoDB instances in your deployment must be using MongoDB 3.4 or
+later. If any instances are on an earlier version of MongoDB, the
+driver or :program:`mongos` will raise an error.
 
 You can specify ``maxStalenessSeconds`` with the following read
 preference modes:
@@ -182,7 +183,10 @@ secondary's lag when choosing where to direct a read operation.
 
 You must specify a ``maxStalenessSeconds`` value of 90 seconds or
 longer: specifying a smaller ``maxStalenessSeconds`` value will raise
-an error.
+an error. Clients estimate secondaries' staleness by periodically
+checking the latest write date of each replica set member. Since these
+checks are infrequent, the staleness estimate is coarse. Thus, clients
+cannot enforce a ``maxStalenessSeconds`` value of less than 90 seconds.
 
 .. index:: tag sets
 .. index:: read preference; tag sets
