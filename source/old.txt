@@ -1,0 +1,116 @@
+Read Preference Modes
+
+primary
+All read operations use only the current replica set primary. [6] This is the default read mode. If the primary is unavailable, read operations produce an error or throw an exception.
+
+The primary read preference mode is not compatible with read preference
+modes that use tag sets or max staleness. If you specify tag sets or a
+max staleness value with primary, the driver will produce an error.
+
+primaryPreferred
+In most situations, operations read from the primary member of the set. However, if the primary is unavailable, as is the case during failover situations, operations read from secondary members that satisfy the read preference’s maxStalenessSeconds and tag sets.
+
+When the primaryPreferred read preference includes a
+maxStalenessSeconds value and there is no primary from which to read,
+the client estimates how stale each secondary is by comparing the
+secondary’s last write to that of the secondary with the most recent
+write. The client then directs the read operation to a secondary whose
+estimated lag is less than or equal to maxStalenessSeconds.
+
+When the read preference includes tag sets and no primary is available,
+the client reads from secondaries that match the specified tags. If no
+secondaries have matching tags, the read operation produces an error.
+
+When the read preference includes a maxStalenessSeconds value and tag
+sets, the client filters by staleness first and then by the specified
+tags.
+
+Since the application may receive data from a secondary, read
+operations using the primaryPreferred mode may return stale data in
+some situations. Use the maxStalenessSeconds option to avoid reading
+from secondaries that the client estimates are overly stale.
+
+secondary
+Operations read only from the secondary members of the set. If no secondaries are available, then this read operation produces an error or exception.
+
+Most replica sets have at least one secondary, but there are situations
+where there may be no available secondary. For example, a replica set
+with a primary, a secondary, and an arbiter may not have any
+secondaries if a member is in recovering state or unavailable.
+
+When the read preference includes a maxStalenessSeconds value, the
+client estimates how stale each secondary is by comparing the
+secondary’s last write to that of the primary. The client will then
+direct the read operation to a secondary whose estimated lag is less
+than or equal to maxStalenessSeconds. If there is no primary, the
+client uses the secondary with the most recent write for the comparison.
+
+When the read preference includes tag sets, the client attempts to find
+secondary members that match the specified tag sets and directs reads
+to a random secondary from among the nearest group of matching
+secondaries. If no secondaries have matching tags, the read operation
+produces an error. [2]
+
+When the read preference includes a maxStalenessSeconds value and tag
+sets, the client filters by staleness first and then by the specified
+tags.
+
+Read operations using the secondary mode may return stale data. Use the
+maxStalenessSeconds option to avoid reading from secondaries that the
+client estimates are overly stale.
+
+secondaryPreferred
+In most situations, operations read from secondary members, but in situations where the set consists of a single primary (and no other members), the read operation will use the replica set’s primary.
+
+When the read preference includes a maxStalenessSeconds value, the
+client estimates how stale each secondary is by comparing the
+secondary’s last write to that of the primary. The client will then
+direct the read operation to a secondary whose estimated lag is less
+than or equal to maxStalenessSeconds. If there is no primary, the
+client uses the secondary with the most recent write for the
+comparison. If there are no secondaries with estimated lag less than or
+equal to maxStalenessSeconds, the client directs the read operation to
+the replica set’s primary.
+
+When the read preference includes tag sets, the client attempts to find
+secondary members that match the specified tag sets and directs reads
+to a random secondary from among the nearest group of matching
+secondaries. If no secondaries have matching tags, the client ignores
+tags and reads from the primary.
+
+When the read preference includes a maxStalenessSeconds value and tag
+sets, the client filters by staleness first and then by the specified
+tags.
+
+Read operations using the secondaryPreferred mode may return stale
+data. Use the maxStalenessSeconds option to avoid reading from
+secondaries that the client estimates are overly stale.
+
+nearest
+The driver reads from a member whose network latency falls within the acceptable latency window. Reads in the nearest mode do not consider whether a member is a primary or secondary when routing read operations: primaries and secondaries are treated equivalently. The read preference member selection documentation describes the process in detail.
+
+Set this mode to minimize the effect of network latency on read operations without preference for current or stale data.
+
+When the read preference includes a maxStalenessSeconds value, the
+client estimates how stale each secondary is by comparing the
+secondary’s last write to that of the primary, if available, or to the
+secondary with the most recent write if there is no primary. The client
+will then filter out any secondary whose estimated lag is greater than
+maxStalenessSeconds and randomly direct the read to a remaining member
+(primary or secondary) whose network latency falls within the
+acceptable latency window.
+
+If you specify a tag set, the client attempts to find a replica set
+member that matches the specified tag set and directs reads to an
+arbitrary member from among the nearest group.
+
+When the read preference includes a maxStalenessSeconds value and tag
+sets, the client filters by staleness first and then by the specified
+tags. From the remaining mongod instances, the client then randomly
+directs the read to an instance that falls within the acceptable
+latency window. The read preference member selection documentation
+describes the process in detail.
+
+Read operations using the nearest mode may return stale data. Use the
+maxStalenessSeconds option to avoid reading from secondaries that the
+client estimates are overly stale.
