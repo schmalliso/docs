@@ -58,17 +58,13 @@ a list of recommended actions to protect a MongoDB deployment.
 .. toctree::
    :titlesonly:
    :hidden:
+   :includehidden:
 
    /administration/security-checklist
+   Secure Your MongoDB Deployment <https://docs.mongodb.com/guides/server/auth?jmp=manual>
    /core/authentication
-   /tutorial/enable-authentication
    /core/authorization
    /core/security-transport-encryption
    /core/security-encryption-at-rest
    /core/auditing
    /core/security-hardening
-   /tutorial/implement-field-level-redaction
-   /reference/security
-   /tutorial/create-a-vulnerability-report
-   /appendix/security
-

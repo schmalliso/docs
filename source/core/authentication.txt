@@ -56,8 +56,8 @@ also supports the following mechanisms:
 
 - :ref:`Kerberos authentication <security-auth-kerberos>`.
 
-Internal Authentication
------------------------
+Membership Authentication
+-------------------------
 
 In addition to verifying the identity of a client, MongoDB can require
 members of replica sets and sharded clusters to :ref:`authenticate
@@ -76,8 +76,8 @@ authentication and sharded clusters, see :ref:`sharding-security`.
 .. toctree::
    :titlesonly:
    :hidden:
-
-   /core/security-users
-   /core/authentication-mechanisms
-   /core/authentication-mechanisms-enterprise
+   
+   /core/security-client-authentication
    /core/security-internal-authentication
+   /core/security-users
+   

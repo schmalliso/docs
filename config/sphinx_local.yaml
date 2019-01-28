@@ -47,6 +47,7 @@ theme:
     - /core/replica-set-high-availability
     - /core/replica-set-members
     - /core/replica-set-secondary
+    - /core/security-client-authentication
     - /core/transactions
     - /geospatial-queries
     - /replication

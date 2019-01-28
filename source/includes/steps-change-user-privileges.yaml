@@ -12,7 +12,7 @@ pre: |
   To display the roles and privileges of the user to be modified, use the
   :method:`db.getUser()` and :method:`db.getRole()` methods.
 action:
-  - pre: |      
+  - pre: |
       For example, to view roles for ``reportsUser`` created in
       :ref:`add-new-user`, issue:
     language: javascript
@@ -38,8 +38,8 @@ content: |
 
   To revoke a subset of privileges provided by an existing role: revoke
   the original role and grant a role that contains only the required
-  privileges. You may need to :ref:`create a new role
-  <create-user-defined-role>` if a role does not exist.
+  privileges. You may need to create a new role
+  if a role does not exist.
 ---
 title: Modify the user's access.
 ref: user-modification

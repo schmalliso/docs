@@ -1,0 +1,36 @@
+.. guide::
+   title: View a User's Roles and Privileges
+   author: MongoDB Documentation Team
+   type: Getting Started
+   level: beginner
+   product_version: 4.2
+   result_description:
+
+     This tutorial uses the :method:`db.getUser()` method to retrieve
+     user information for a specified user, including the :ref:`roles
+     <roles>` and :doc:`actions </reference/privilege-actions>`
+     assigned to that user.
+
+   time: 2
+   prerequisites:
+     To view user information, you must connect to a :binary:`~bin.mongod`
+     or :binary:`~bin.mongos` instance from the :binary:`~bin.mongo` shell
+     and :method:`authenticate as a user <db.auth()>` with appropriate privileges.
+     
+     .. note::
+     
+        .. include:: /includes/access-user-info.rst
+
+   check_your_environment:
+     Use the :dbcommand:`connectionStatus` command to verify that you
+     are an authenticated user. :dbcommand:`connectionStatus` lists all
+     currently-authenticated users.
+
+   procedure:
+   
+     .. include:: /includes/view-user-roles-and-privileges.rst
+
+   summary:
+     If you have successfully completed this procedure, you will have
+     viewed the roles assigned for the specified user and then retrieved
+     the user's full set of privileges.

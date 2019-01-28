@@ -13,12 +13,32 @@ Security Hardening
 To reduce the risk exposure of the entire MongoDB system, ensure that
 only trusted hosts have access to MongoDB.
 
+.. _http-interface-security:
+.. _rest-api:
+
 MongoDB Configuration Hardening
 -------------------------------
 
-.. include:: /includes/fact-deprecated-http-interface.rst
+IP Binding
+~~~~~~~~~~
+
+.. include:: /includes/fact-default-bind-ip-change.rst
+
+.. include:: /includes/warning-bind-ip-security-considerations.rst
+
+.. warning::
+
+   Make sure that your :binary:`~bin.mongod` and :binary:`~bin.mongos`
+   instances are only accessible on trusted networks. If your system
+   has more than one network interface, bind MongoDB programs to the
+   private or internal network interface.
 
 For more information, see :doc:`/core/security-mongodb-configuration`.
+
+HTTP Status Interface and REST API
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /includes/fact-deprecated-http-interface.rst
 
 Network Hardening
 -----------------

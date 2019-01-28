@@ -1,0 +1,12 @@
+=====================
+Client Authentication
+=====================
+
+.. default-domain:: mongodb
+
+.. toctree::
+
+   /core/security-scram
+   /core/security-x.509
+   /core/security-ldap
+   /core/kerberos

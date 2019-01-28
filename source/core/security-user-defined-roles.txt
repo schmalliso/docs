@@ -14,6 +14,13 @@ User-Defined Roles
 
 .. versionadded:: 2.6
 
+.. toctree::
+   :hidden:
+
+   /tutorial/security-create-custom-roles
+   /core/collection-level-access-control
+   /reference/system-roles-collection
+
 MongoDB provides a number of :doc:`built-in roles
 </reference/built-in-roles>`. However, if these roles cannot describe the
 desired set of privileges, you can create new roles.

@@ -1,8 +1,8 @@
 .. _authorization:
 
-=========================
-Role-Based Access Control
-=========================
+=========================================
+Role-Based Access Control (Authorization)
+=========================================
 
 .. default-domain:: mongodb
 
@@ -108,6 +108,9 @@ MongoDB provides methods to create and modify :doc:`user-defined roles
    :hidden:
 
 
-   /core/security-built-in-roles
+   /core/security-ldap-external
+   /reference/built-in-roles
    /core/security-user-defined-roles
-   /core/collection-level-access-control
+   /tutorial/view-a-roles-privileges
+   /reference/resource-document
+   /reference/privilege-actions

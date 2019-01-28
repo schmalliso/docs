@@ -1,0 +1,36 @@
+.. guide::
+   title: Update a User's Permissions
+   author: MongoDB Documentation Team
+   type: Getting Started
+   level: beginner
+   product_version: 4.2
+   result_description:
+
+     This tutorial demonstrates how to update a user's assigned
+     :ref:`roles <roles>`.
+
+   time: 2
+   prerequisites:
+
+     To modify a user's information, you must connect to the
+     :binary:`~bin.mongod` or :binary:`~bin.mongos` instance containing
+     the database to which the user belongs from the
+     :binary:`~bin.mongo` shell and :method:`authenticate as a user
+     <db.auth()>` with appropriate privileges.
+
+     - .. include:: /includes/access-grant-roles.rst
+
+     - .. include:: /includes/access-revoke-roles.rst
+
+     - .. include:: /includes/access-roles-info.rst
+
+   check_your_environment:
+     .. include:: /includes/verify-authentication-and-roles.rst
+
+   procedure:
+
+     .. include:: /includes/steps/change-user-privileges.rst
+     
+   summary:
+     If you have successfully completed this procedure, you will have
+     modified the roles assigned to the specified user.

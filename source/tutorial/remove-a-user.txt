@@ -1,0 +1,60 @@
+.. guide::
+   title: Remove a User
+   author: MongoDB Documentation Team
+   type: Getting Started
+   level: beginner
+   product_version: 4.2
+   result_description:
+     
+     This tutorial uses the :method:`db.dropUser()` method to delete
+     a user from the specified database.
+     
+   time: 2
+   prerequisites:
+   
+     To delete a user from your database,you must connect to the
+     :binary:`~bin.mongod` or :binary:`~bin.mongos` instance containing
+     the database to which the user belongs from the
+     :binary:`~bin.mongo` shell and :method:`authenticate as a user
+     <db.auth()>` with appropriate privileges.
+
+     .. include:: /includes/access-drop-user.rst
+
+   check_your_environment:
+     Use the :dbcommand:`connectionStatus` command to verify that
+     you are an authenticated user. :dbcommand:`connectionStatus` lists
+     all currently-authenticated users.
+     
+     To verify that your user possess the required permissions to grant
+     or revoke roles on that database, follow the procedure in
+     :doc:`/tutorial/view-a-users-roles`.
+   
+   procedure:
+
+     The following procedure delete the ``reportsUser`` user that was
+     created in the ``reporting`` database.
+     
+     #. Switch to the user's authentication database:
+
+        .. code-block:: sh
+
+           use reporting
+
+     #. Use :method:`db.dropUser()` to delete the user with username
+        ``reportsUser``. To ensure that the user changes propagate to a
+        majority of the :term:`replica set` or :term:`sharded cluster`
+        before the operation returns, specify a :writeconcern:`majority`
+        :ref:`write concern` and use the :ref:`wtimeout <wc-wtimeout>`
+        to ensure that the write operation does not block infinitely:
+        
+        .. code-block:: sh
+        
+           db.dropUser( "reportsUser", { w : "majority", wtimeout : 5000 } )
+        
+        If successful, the operation returns ``true``. If the operation
+        returns ``false``, you have not deleted the user and will need
+        to try the operation again.
+     
+   summary:
+     If you have successfully completed this procedure, you will have
+     removed the user from MongoDB.
