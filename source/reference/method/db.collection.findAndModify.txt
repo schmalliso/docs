@@ -624,8 +624,6 @@ Update Elements Match ``arrayFilters`` Criteria
 
 Create a collection ``students`` with the following documents:
 
-.. cssclass:: copyable-code
-
 .. code-block:: javascript
 
    db.students.insert([
@@ -639,8 +637,6 @@ To modify all elements that are greater than or equal to ``100`` in the
 :update:`$[\<identifier\>]` with the ``arrayFilters`` option in the
 :method:`db.collection.findAndModify` method:
    
-.. cssclass:: copyable-code
-
 .. code-block:: javascript
 
    db.students.findAndModify({
