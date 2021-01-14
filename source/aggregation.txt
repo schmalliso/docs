@@ -29,8 +29,6 @@ MongoDB's :doc:`aggregation framework
 processing pipelines. Documents enter a multi-stage pipeline that
 transforms the documents into an aggregated result. For example:
 
-In the example,
-
 .. code-block:: javascript
 
    db.orders.aggregate([
